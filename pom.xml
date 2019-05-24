@@ -11,7 +11,7 @@
 	</parent>
 
 	<groupId>com.jamininfo</groupId>
-	<artifactId>jamininfo-jserver</artifactId>
+	<artifactId>jserver</artifactId>
 	<version>1.0.0</version>
 
 	<properties>
@@ -20,20 +20,21 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 
-    <repositories>
-        <repository>
-            <id>nexus-repos</id>
-            <name>Team Nexus Repository</name>
-            <url>http://10.8.40.24:8081/repository/maven-public/</url>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>nexus-repos</id>
-            <name>Team Nexus Repository</name>
-            <url>http://10.8.40.24:8081/repository/maven-public/</url>
-        </pluginRepository>
-    </pluginRepositories>
+	<repositories>
+		<repository>
+			<id>nexus-repos</id>
+			<name>Team Nexus Repository</name>
+			<url>http://10.8.40.74:8081/repository/maven-public/</url>
+		</repository>
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>nexus-repos</id>
+			<name>Team Nexus Repository</name>
+			<url>http://10.8.40.74:8081/repository/maven-public/</url>
+		</pluginRepository>
+	</pluginRepositories>
     
 	<dependencies>
         <!-- 单元测试 -->
@@ -67,7 +68,7 @@
 		<!-- 通用工具 -->
 		<dependency>
 			<groupId>com.jamininfo</groupId>
-			<artifactId>jamininfo-common</artifactId>
+			<artifactId>jserver-common</artifactId>
 			<version>1.0.0</version>
 		</dependency>
 		<dependency>
